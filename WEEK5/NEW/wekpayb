@@ -1,0 +1,5 @@
+strONE = "wuba"
+strTWO = "luba"
+strTHREE = "dubdub"
+strFULL = .join([strONE, strTWO, strTHREE])
+print(strFULL)
