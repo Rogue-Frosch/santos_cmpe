@@ -1,0 +1,13 @@
+isIn = (9 in [33,44,54,18,9,0,8,13])
+print(isIn)
+isIn = (8 in [28,31,9,33,13,14,98])
+print(isIn)
+IsInW = ("Bi" in "Bisaya")
+print(IsInW)
+IsInW = ("Bai" in "Bisaya")
+print(IsInW)
+
+isIs = ("AQ" == "Bogart")
+print(isIs)
+isIS = ("Bogart" == "AQ")
+print(isIS)
