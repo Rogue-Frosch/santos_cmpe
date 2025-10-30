@@ -10,6 +10,3 @@ print(question)
 print(answer)
 print (y+x)
 
-
-
-
