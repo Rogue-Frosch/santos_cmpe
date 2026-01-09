@@ -1,16 +1,48 @@
-# This is a sample Python script.
+import os
+import csv
+import time
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+CSV_FOLDER = os.path.join(BASE_PATH, 'RESOURCES')
+CSV_PATH = os.path.join(CSV_FOLDER, "AKONGCSV.csv")
+
+print(CSV_PATH)
+
+with open(CSV_PATH, mode='r', newlines='') as csvfile:
+    reader = csv.reader(csv_file)
+    for row in reader:
+        print(row)
+        csv_data.append(row)
+
+print("------------------------------------------------------------")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+'''
+print(os.getcwd())
+print(os.listdir(os.getcwd()))
+#os.makedirs(os.getcwd() + "/bagong new")
+#os.makedirs(os.path.join(os.getcwd(), "bagong newer"))
+#os.makedirs(os.path.join(os.path.join(os.getcwd(), "bagong newer"), "bagong newest"))
+print(os.path.abspath(__file__))
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+print(BASE_PATH)
+
+with open("danger.txt", "w", newline='')as dangerfile:
+    print("File Created")
+
+time.sleep(10)
+
+pathdir = ""
+for root, dirs, files in os.walk(BASE_PATH):
+    for filename in files:
+        print(filename)
+        if filename == "danger.txt":
+            print(os.path.join(root, filename))
+            pathdir = os.path.join(root, filename)
+            os.remove(pathdir)
+            break
+'''
