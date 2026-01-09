@@ -10,7 +10,7 @@ ATMMachineDataBase = [
     } ,
 { "Name": {
         "LastName": "Panut",
-        "FirstName": "Paluck", }
+        "FirstName": "Padluck", }
         ,
     "AccountNo": 216967,
     "PIN" :4567  ,
